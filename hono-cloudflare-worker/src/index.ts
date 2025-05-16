@@ -79,7 +79,7 @@ app.get('/verify-jwt', async (c) => {
     const token = c.req.query('token')
     if (!token) {
       return c.json({
-        error: 'missing_param',
+        error: 'invalid_params',
         error_message: 'token query parameter is required'
       }, 400);
     }
@@ -87,7 +87,7 @@ app.get('/verify-jwt', async (c) => {
     const domain = c.req.query('domain')
     if (!domain) {
       return c.json({
-        error: 'missing_param',
+        error: 'invalid_params',
         error_message: 'domain query parameter is required'
       }, 400);
     }
