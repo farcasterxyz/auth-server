@@ -1,0 +1,19 @@
+{
+  "name": "@farcaster/auth-server-client",
+  "version": "0.0.1",
+  "description": "Minimal client for auth-server API",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "clean": "rm -rf dist"
+  },
+  "license": "MIT",
+  "peerDependencies": {
+    "typescript": "5.8.3"
+  },
+  "files": [
+    "dist"
+  ]
+}
